@@ -1,0 +1,8 @@
+PartMe.AI Volcengine Design Plugin
+Copyright 2026 PartMe.AI
+
+API facts (endpoints, parameter names, status enums) reference public
+Volcengine/火山引擎 documentation and observed behavior of public integrations.
+No third-party code is vendored in this repository. Volcengine, 豆包, Seedream,
+Seedance are trademarks of ByteDance/Volcengine; this is an independent
+integration, not affiliated with or endorsed by Volcengine.

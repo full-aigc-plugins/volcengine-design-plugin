@@ -1,0 +1,40 @@
+{
+  "name": "volcengine-design",
+  "displayName": "Volcengine Design",
+  "displayName_i18n": { "en": "Volcengine Design", "zh-CN": "火山引擎创作" },
+  "version": "0.1.0",
+  "description": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",
+  "description_i18n": {
+    "en": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",
+    "zh-CN": "火山引擎创作套件：豆包 ASR 毫秒级词级转写、TTS 配音、Seedream 生图、Seedance 生视频（首尾帧白模锚定），确定性脚本客户端。"
+  },
+  "author": { "name": "Full Stack Skills / PartMe.AI", "url": "https://github.com/partme-ai" },
+  "homepage": "https://github.com/partme-ai/partme-volcengine-design",
+  "repository": "https://github.com/partme-ai/partme-volcengine-design",
+  "license": "Apache-2.0",
+  "keywords": ["volcengine", "doubao", "asr", "tts", "seedance", "seedream"],
+  "skills": "skills",
+  "commands": "commands",
+  "userConfig": {
+    "ark_api_key": {
+      "type": "string",
+      "title": "方舟 API Key",
+      "description": "console.volcengine.com/ark → API Key 管理；注入 ARK_API_KEY（生图/生视频/对话）。",
+      "required": false,
+      "sensitive": true
+    },
+    "volcengine_app_id": {
+      "type": "string",
+      "title": "豆包语音 AppID",
+      "description": "console.volcengine.com/speech/app 的应用 AppID（ASR/TTS）。",
+      "required": false
+    },
+    "volcengine_access_token": {
+      "type": "string",
+      "title": "豆包语音 Access Token",
+      "description": "同页 Access Token；与 AppID 配对使用。",
+      "required": false,
+      "sensitive": true
+    }
+  }
+}
