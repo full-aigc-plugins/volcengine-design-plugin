@@ -1,11 +1,21 @@
 {
   "name": "volcengine-design",
   "version": "0.1.0",
-  "description": "Volcengine creation suite for coding agents — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream image generation, and Seedance video generation (first/last-frame white-model anchoring) via deterministic clients.",
-  "author": { "name": "Full Stack Skills / PartMe.AI", "url": "https://github.com/partme-ai" },
+  "description": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",
+  "author": {
+    "name": "Full Stack Skills / PartMe.AI",
+    "url": "https://github.com/partme-ai"
+  },
   "homepage": "https://github.com/partme-ai/partme-volcengine-design",
   "repository": "https://github.com/partme-ai/partme-volcengine-design",
   "license": "Apache-2.0",
-  "keywords": ["volcengine", "doubao", "asr", "tts", "seedance", "seedream"],
+  "keywords": [
+    "volcengine",
+    "doubao",
+    "asr",
+    "tts",
+    "seedance",
+    "seedream"
+  ],
   "skills": "./skills/"
 }
