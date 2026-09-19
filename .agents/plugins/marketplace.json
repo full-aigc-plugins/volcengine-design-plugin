@@ -9,7 +9,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/partme-ai/partme-volcengine-design.git",
-        "ref": "main"
+        "ref": "v0.1.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -18,11 +18,11 @@
       "category": "Creativity",
       "version": "0.1.1",
       "description": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",
-      "icon": "https://raw.githubusercontent.com/partme-ai/partme-volcengine-design/main/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/volcengine-design-plugin@v0.1.1/assets/official-logo.png",
       "interface": {
         "displayName": "Volcengine Design",
         "shortDescription": "Doubao ASR/TTS, image & video generation workflows",
-        "logo": "https://raw.githubusercontent.com/partme-ai/partme-volcengine-design/main/assets/official-logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/volcengine-design-plugin@v0.1.1/assets/official-logo.png"
       }
     }
   ]
