@@ -9,8 +9,8 @@
     "zh-CN": "火山引擎创作套件：豆包 ASR 毫秒级词级转写、TTS 配音、Seedream 生图、Seedance 生视频（首尾帧白模锚定），确定性脚本客户端。"
   },
   "author": { "name": "Full Stack Skills / PartMe.AI", "url": "https://github.com/partme-ai" },
-  "homepage": "https://github.com/partme-ai/partme-volcengine-design",
-  "repository": "https://github.com/partme-ai/partme-volcengine-design",
+  "homepage": "https://github.com/full-aigc-plugins/volcengine-design-plugin",
+  "repository": "https://github.com/full-aigc-plugins/volcengine-design-plugin",
   "license": "Apache-2.0",
   "keywords": ["volcengine", "doubao", "asr", "tts", "seedance", "seedream"],
   "skills": "skills",

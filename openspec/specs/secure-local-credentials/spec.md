@@ -1,7 +1,7 @@
 # secure-local-credentials Specification
 
 ## Purpose
-TBD - created by archiving change harden-runtime-and-credentials. Update Purpose after archive.
+Define local credential storage and validation rules that keep Volcengine secrets out of manifests, logs, and unsafe files.
 ## Requirements
 ### Requirement: Credential files are private
 
@@ -20,4 +20,3 @@ Malformed JSON and I/O failures SHALL produce actionable errors instead of being
 
 - **WHEN** credential loading cannot parse the file
 - **THEN** the command SHALL report the file path and parsing reason
-

@@ -1,7 +1,7 @@
 # reliable-asr-client Specification
 
 ## Purpose
-TBD - created by archiving change harden-runtime-and-credentials. Update Purpose after archive.
+Define deterministic ASR submission, polling, terminal-state, timeout, and recovery behavior for the Volcengine client.
 ## Requirements
 ### Requirement: Audio source is unambiguous
 
@@ -20,4 +20,3 @@ Completed, failed, rejected, and cancelled tasks SHALL stop polling immediately.
 
 - **WHEN** a query response contains a failure terminal state
 - **THEN** the command SHALL report provider error details and return non-zero
-
