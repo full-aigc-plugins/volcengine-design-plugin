@@ -14,4 +14,4 @@
 ## 3. Release
 
 - [x] 3.1 Bump manifests and market metadata.
-- [ ] 3.2 Verify all host contracts and publish a tagged release.
+- [x] 3.2 Verify all host contracts and publish a tagged release.
