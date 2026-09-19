@@ -26,7 +26,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from volcengine_config import SPEECH_BASE_URL, speech_credentials  # noqa: E402
 
 RESOURCE_ID = "volc.bigasr.auc.duration"
-TERMINAL = {"Completed", "completed"}
+SUCCESS_TERMINAL = {"completed", "success", "succeeded"}
+FAILURE_TERMINAL = {"failed", "cancelled", "canceled", "error", "expired", "rejected"}
 
 
 def call_speech(path: str, payload: dict, request_id: str) -> dict:
@@ -90,11 +91,18 @@ def cmd_wait(args: argparse.Namespace) -> int:
         request_id = str(uuid.uuid4())
         result = call_speech("/api/v3/auc/bigmodel/query", {"id": args.task_id}, request_id)
         status = result.get("status")
+        normalized_status = str(status or "").strip().lower()
         print(json.dumps({"task_id": args.task_id, "status": status}, ensure_ascii=False), flush=True)
-        if status in TERMINAL:
+        if normalized_status in SUCCESS_TERMINAL:
             if args.json_output:
                 print(json.dumps(result, ensure_ascii=False, indent=2))
-            return 0 if status in ("Completed", "completed") else 1
+            return 0
+        if normalized_status in FAILURE_TERMINAL:
+            detail = result.get("message") or result.get("error") or "任务未成功完成"
+            print(f"ASR 任务终止：status={status}; detail={detail}", file=sys.stderr)
+            if args.json_output:
+                print(json.dumps(result, ensure_ascii=False, indent=2))
+            return 1
         if time.time() > deadline:
             sys.exit(f"轮询超时（{args.timeout}s）；task_id={args.task_id} 已持久化，可稍后 query 恢复")
         time.sleep(args.interval)
@@ -118,27 +126,26 @@ def cmd_words(args: argparse.Namespace) -> int:
     return 0
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="豆包大模型录音文件识别 deterministic client")
     sub = parser.add_subparsers(dest="cmd", required=True)
 
-    common = argparse.ArgumentParser(add_help=False)
-    common.add_argument("--format", default="wav", help="wav/mp3/m4a…")
-    common.add_argument("--url", help="音频公网 URL（与 --file 二选一）")
-    common.add_argument("--file", help="本地音频文件（base64 上传）")
-    common.add_argument("--model", default="bigmodel", help="bigmodel / 2.0 形态名")
-    common.add_argument("--language", default="zh-CN")
-
-    p = sub.add_parser("submit", parents=[common], help="submit one transcription task")
+    p = sub.add_parser("submit", help="submit one transcription task")
+    source = p.add_mutually_exclusive_group(required=True)
+    source.add_argument("--url", help="音频公网 URL（与 --file 二选一）")
+    source.add_argument("--file", help="本地音频文件（base64 上传）")
+    p.add_argument("--format", default="wav", help="wav/mp3/m4a…")
+    p.add_argument("--model", default="bigmodel", help="bigmodel / 2.0 形态名")
+    p.add_argument("--language", default="zh-CN")
     p.set_defaults(fn=cmd_submit)
 
-    p = sub.add_parser("query", parents=[common], help="query once")
+    p = sub.add_parser("query", help="query once")
     p.add_argument("--task-id", required=True)
     p.add_argument("--request-id", help="原始 request_id（可选）")
     p.add_argument("--json", dest="json_output", action="store_true")
     p.set_defaults(fn=cmd_query)
 
-    p = sub.add_parser("wait", parents=[common], help="poll until Completed")
+    p = sub.add_parser("wait", help="poll until a terminal status")
     p.add_argument("--task-id", required=True)
     p.add_argument("--interval", type=int, default=10)
     p.add_argument("--timeout", type=int, default=1800)
@@ -149,7 +156,7 @@ def main() -> int:
     p.add_argument("--task-id", required=True)
     p.set_defaults(fn=cmd_words)
 
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     return args.fn(args)
 
 

@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "package": "volcengine-skills",
+      "repo": "https://github.com/full-aigc-skills/volcengine-skills.git",
+      "ref": "v0.1.0",
+      "sha": "d5a73e38bbf825fc1e21fc635f65dca7ad06a8ce",
+      "skills": [
+        "volcengine-asr-transcribe",
+        "volcengine-audio-spec",
+        "volcengine-design-use",
+        "volcengine-image-generation",
+        "volcengine-tts-narration",
+        "volcengine-video-generation"
+      ],
+      "dest": "skills/",
+      "sha256": {
+        "volcengine-asr-transcribe": "8046dabdd870fa4636094890337644c90f0a23c672c9789c37d3aa8777dd8c72",
+        "volcengine-audio-spec": "0c68451babc0c080f87b25e55a560181839d65c739b04c4cde738cddd025b54e",
+        "volcengine-design-use": "a0ee3451bcfb2b9f7292f1003db19bf68757af6333f72baaf1db610432be8f9f",
+        "volcengine-image-generation": "4fd5d2ac01c29d7c7780ea22558243f59a65755d0f3a34edb04a8a45409049ab",
+        "volcengine-tts-narration": "64635a0fe6f8b498409f19d720c72526249def400a7b3af4e8b30e723b16481d",
+        "volcengine-video-generation": "89a09374eade160cb9dcfe661353f103b00c9610c5d3853af9e6f08e3c17f4b4"
+      }
+    }
+  ]
+}

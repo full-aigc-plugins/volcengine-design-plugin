@@ -2,7 +2,7 @@
   "name": "volcengine-design",
   "displayName": "Volcengine Design",
   "displayName_i18n": { "en": "Volcengine Design", "zh-CN": "火山引擎创作" },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",
   "description_i18n": {
     "en": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",

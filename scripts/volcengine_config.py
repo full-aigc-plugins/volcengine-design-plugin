@@ -41,11 +41,23 @@ def _user_credentials() -> dict:
     data: dict = {}
     env_file = Path(os.environ.get("VOLCENGINE_ENV_FILE", "")) if os.environ.get("VOLCENGINE_ENV_FILE") else Path.cwd() / ".env"
     data.update(_parse_env_file(env_file))
-    if _config_file().is_file():
+    config_file = _config_file()
+    if config_file.is_file():
         try:
-            data.update(json.loads(_config_file().read_text(encoding="utf-8")))
-        except Exception:
-            pass
+            stat_result = config_file.stat()
+            if os.name == "posix":
+                if stat_result.st_uid != os.geteuid():
+                    raise RuntimeError(f"凭据文件所有者不安全：{config_file}；请改为当前用户所有")
+                if stat_result.st_mode & 0o077:
+                    raise RuntimeError(f"凭据文件权限过宽：{config_file}；请执行 chmod 600 {config_file}")
+            parsed = json.loads(config_file.read_text(encoding="utf-8"))
+            if not isinstance(parsed, dict):
+                raise RuntimeError(f"凭据文件必须是 JSON 对象：{config_file}")
+            data.update(parsed)
+        except json.JSONDecodeError as exc:
+            raise RuntimeError(f"凭据文件 JSON 无效：{config_file}（{exc.msg}）") from exc
+        except OSError as exc:
+            raise RuntimeError(f"无法读取凭据文件：{config_file}（{exc}）") from exc
     return data
 
 

@@ -1,6 +1,6 @@
 {
   "name": "volcengine-design",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",
   "author": { "name": "Full Stack Skills / PartMe.AI" },
   "homepage": "https://github.com/partme-ai/partme-volcengine-design",
