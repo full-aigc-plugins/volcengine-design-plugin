@@ -1,18 +1,31 @@
 {
   "name": "volcengine-design",
   "displayName": "Volcengine Design",
-  "displayName_i18n": { "en": "Volcengine Design", "zh-CN": "火山引擎创作" },
+  "displayName_i18n": {
+    "en": "Volcengine Design",
+    "zh-CN": "火山引擎创作"
+  },
   "version": "0.1.2",
   "description": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",
   "description_i18n": {
     "en": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",
     "zh-CN": "火山引擎创作套件：豆包 ASR 毫秒级词级转写、TTS 配音、Seedream 生图、Seedance 生视频（首尾帧白模锚定），确定性脚本客户端。"
   },
-  "author": { "name": "Full Stack Skills / PartMe.AI", "url": "https://github.com/partme-ai" },
+  "author": {
+    "name": "Full Stack Skills / PartMe.AI",
+    "url": "https://github.com/partme-ai"
+  },
   "homepage": "https://github.com/full-aigc-plugins/volcengine-design-plugin",
   "repository": "https://github.com/full-aigc-plugins/volcengine-design-plugin",
   "license": "Apache-2.0",
-  "keywords": ["volcengine", "doubao", "asr", "tts", "seedance", "seedream"],
+  "keywords": [
+    "volcengine",
+    "doubao",
+    "asr",
+    "tts",
+    "seedance",
+    "seedream"
+  ],
   "skills": "skills",
   "commands": "commands",
   "userConfig": {

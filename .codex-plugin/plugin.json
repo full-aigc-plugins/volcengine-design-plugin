@@ -18,8 +18,10 @@
     "seedream"
   ],
   "interface": {
-    "displayName": "火山引擎设计",
-    "shortDescription": "豆包 ASR/TTS、Seedream 图像与 Seedance 视频创作"
+    "displayName": "Volcengine Design",
+    "shortDescription": "Doubao ASR/TTS, image & video generation workflows",
+    "logo": "./assets/official-logo.png",
+    "logoDark": "./assets/official-logo.png"
   },
   "skills": "./skills/"
 }
