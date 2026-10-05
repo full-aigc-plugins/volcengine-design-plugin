@@ -1,5 +1,14 @@
 # PartMe.AI Volcengine Design Plugin
 
+## Plugin marketplaces
+
+This plugin belongs to **AIGC content creation**.
+
+| Category | Marketplace | Purpose |
+| --- | --- | --- |
+| Full-stack development | [Full Stack Plugins](https://github.com/partme-ai/full-stack-plugins) | Architecture and UI design, code understanding, quality checks, code review, workflow governance, and server operations |
+| AIGC content creation | [Full AIGC Plugins](https://github.com/partme-ai/full-aigc-plugins) | Image, video, audio, music, 3D, and multimodal content creation |
+
 Tri-platform plugin (Codex / ZCode / Kimi Code) that connects coding agents to **Volcengine creation services** through deterministic stdlib clients (no SDK dependency):
 
 - **豆包大模型 ASR** — 录音转写 with **millisecond word-level timestamps**（口播/短视频切片的时间轴事实底座）
