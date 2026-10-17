@@ -22,7 +22,7 @@
       "interface": {
         "displayName": "Volcengine Design",
         "shortDescription": "Doubao ASR/TTS, image & video generation workflows",
-        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/volcengine-design-plugin@v0.1.2/assets/official-logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/volcengine-design-plugin@v0.2.0/assets/official-logo.png"
       }
     }
   ]
