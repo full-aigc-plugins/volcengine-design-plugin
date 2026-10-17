@@ -1,0 +1,34 @@
+{
+  "name": "@partme-dsh/volcengine-design",
+  "version": "0.2.0",
+  "description": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "./icon.png",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "cordis.patch.yml",
+    "lib/index.js",
+    "icon.svg",
+    "icon.png",
+    "README.md"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "volcengine",
+    "doubao",
+    "asr",
+    "tts",
+    "seedance",
+    "seedream"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
