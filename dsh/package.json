@@ -1,5 +1,5 @@
 {
-  "name": "@partme-dsh/volcengine-design",
+  "name": "volcengine-design",
   "version": "0.2.0",
   "description": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",
   "type": "module",
@@ -32,5 +32,6 @@
     "bundle": {
       "patch": "./cordis.patch.yml"
     }
-  }
+  },
+  "private": true
 }

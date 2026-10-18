@@ -4,4 +4,4 @@
 # for the other hosts.
 - insert:
     - id: volcengine-design-plugin
-      name: '@partme-dsh/volcengine-design'
+      name: 'volcengine-design'
