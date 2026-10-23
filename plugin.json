@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "volcengine-design",
-  "version": "0.2.1",
-  "description": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",
+  "version": "0.1.2",
+  "description": "Doubao ASR with millisecond word timelines, TTS narration, Seedream images and Seedance video. Two credential families stay separate and tasks are submitted once.",
   "author": {
     "name": "Full Stack Skills / PartMe.AI",
     "url": "https://github.com/partme-ai"
@@ -21,10 +21,12 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "Volcengine Design",
-        "shortDescription": "Doubao ASR/TTS, image & video generation workflows",
+        "displayName": "Doubao Voice & Video · Volcengine Design",
+        "shortDescription": "Word-level ASR, TTS narration, image and video generation",
         "logo": "./assets/official-logo.png",
-        "logoDark": "./assets/official-logo.png"
+        "logoDark": "./assets/official-logo.png",
+        "composerIcon": "./assets/official-logo.png",
+        "composerIconDark": "./assets/official-logo.png"
       }
     },
     "ai.nanoco.nanoclaw": {

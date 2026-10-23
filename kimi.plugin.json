@@ -1,7 +1,7 @@
 {
   "name": "volcengine-design",
-  "version": "0.2.1",
-  "description": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",
+  "version": "0.1.2",
+  "description": "Doubao ASR with millisecond word timelines, TTS narration, Seedream images and Seedance video. Two credential families stay separate and tasks are submitted once.",
   "author": {
     "name": "Full Stack Skills / PartMe.AI"
   },
@@ -15,8 +15,8 @@
     "seedance"
   ],
   "interface": {
-    "displayName": "Volcengine Design",
-    "shortDescription": "Doubao ASR/TTS, image & video generation workflows",
+    "displayName": "Doubao Voice & Video · Volcengine Design",
+    "shortDescription": "Word-level ASR, TTS narration, image and video generation",
     "longDescription": "Operate Volcengine creation services from your coding agent: Doubao bigmodel ASR with millisecond word timelines (the slicing base for talking-head editing), TTS narration, Seedream image generation, and Seedance video generation with white-model first/last-frame anchoring.",
     "developerName": "Full Stack Skills / PartMe.AI",
     "websiteURL": "https://github.com/full-aigc-plugins/volcengine-design-plugin"
