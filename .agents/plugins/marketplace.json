@@ -17,13 +17,14 @@
       },
       "category": "Creativity",
       "version": "0.1.2",
-      "description": "Doubao ASR with millisecond word timelines, TTS narration, Seedream images and Seedance video. Two credential families stay separate and tasks are submitted once.",
+      "description": "豆包 ASR 词级时间轴、TTS 旁白、Seedream 生图与 Seedance 生视频；两套凭据分离，任务只提交一次。",
       "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/volcengine-design-plugin@v0.1.2/assets/official-logo.png",
       "interface": {
-        "displayName": "Volcengine Design · Doubao Voice & Video",
-        "shortDescription": "Word-level ASR, TTS narration, image and video generation",
+        "displayName": "Volcengine（豆包语音与视频）",
+        "shortDescription": "词级时间轴 ASR、TTS 旁白与图像视频生成",
         "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/volcengine-design-plugin@v0.1.2/assets/official-logo.png"
-      }
+      },
+      "displayName": "Volcengine（豆包语音与视频）"
     }
   ]
 }

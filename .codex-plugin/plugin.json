@@ -1,7 +1,7 @@
 {
   "name": "volcengine-design",
   "version": "0.1.2",
-  "description": "Doubao ASR with millisecond word timelines, TTS narration, Seedream images and Seedance video. Two credential families stay separate and tasks are submitted once.",
+  "description": "豆包 ASR 词级时间轴、TTS 旁白、Seedream 生图与 Seedance 生视频；两套凭据分离，任务只提交一次。",
   "author": {
     "name": "Full Stack Skills / PartMe.AI",
     "url": "https://github.com/partme-ai"
@@ -25,5 +25,12 @@
     "composerIcon": "./assets/official-logo.png",
     "composerIconDark": "./assets/official-logo.png"
   },
-  "skills": "./skills/"
+  "skills": "./skills/",
+  "displayName": "Volcengine（豆包语音与视频）",
+  "displayName_i18n": {
+    "zh-CN": "Volcengine（豆包语音与视频）"
+  },
+  "description_i18n": {
+    "zh-CN": "豆包 ASR 词级时间轴、TTS 旁白、Seedream 生图与 Seedance 生视频；两套凭据分离，任务只提交一次。"
+  }
 }
