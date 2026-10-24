@@ -1,7 +1,7 @@
 {
   "name": "partme-ai-volcengine-design",
   "interface": {
-    "displayName": "Doubao Voice & Video · Volcengine Design"
+    "displayName": "Volcengine Design · Doubao Voice & Video"
   },
   "plugins": [
     {
@@ -20,7 +20,7 @@
       "description": "Doubao ASR with millisecond word timelines, TTS narration, Seedream images and Seedance video. Two credential families stay separate and tasks are submitted once.",
       "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/volcengine-design-plugin@v0.1.2/assets/official-logo.png",
       "interface": {
-        "displayName": "Doubao Voice & Video · Volcengine Design",
+        "displayName": "Volcengine Design · Doubao Voice & Video",
         "shortDescription": "Word-level ASR, TTS narration, image and video generation",
         "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/volcengine-design-plugin@v0.1.2/assets/official-logo.png"
       }

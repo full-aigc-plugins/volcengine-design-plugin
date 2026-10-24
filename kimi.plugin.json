@@ -15,7 +15,7 @@
     "seedance"
   ],
   "interface": {
-    "displayName": "Doubao Voice & Video · Volcengine Design",
+    "displayName": "Volcengine Design · Doubao Voice & Video",
     "shortDescription": "Word-level ASR, TTS narration, image and video generation",
     "longDescription": "Operate Volcengine creation services from your coding agent: Doubao bigmodel ASR with millisecond word timelines (the slicing base for talking-head editing), TTS narration, Seedream image generation, and Seedance video generation with white-model first/last-frame anchoring.",
     "developerName": "Full Stack Skills / PartMe.AI",

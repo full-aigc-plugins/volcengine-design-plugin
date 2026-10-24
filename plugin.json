@@ -21,7 +21,7 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "Doubao Voice & Video · Volcengine Design",
+        "displayName": "Volcengine Design · Doubao Voice & Video",
         "shortDescription": "Word-level ASR, TTS narration, image and video generation",
         "logo": "./assets/official-logo.png",
         "logoDark": "./assets/official-logo.png",

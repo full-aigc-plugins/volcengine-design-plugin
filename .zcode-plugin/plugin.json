@@ -1,8 +1,8 @@
 {
   "name": "volcengine-design",
-  "displayName": "Doubao Voice & Video · Volcengine Design",
+  "displayName": "Volcengine Design · Doubao Voice & Video",
   "displayName_i18n": {
-    "en": "Doubao Voice & Video · Volcengine Design"
+    "en": "Volcengine Design · Doubao Voice & Video"
   },
   "version": "0.1.2",
   "description": "Doubao ASR with millisecond word timelines, TTS narration, Seedream images and Seedance video. Two credential families stay separate and tasks are submitted once.",
