@@ -1,7 +1,7 @@
 {
   "name": "partme-ai-volcengine-design",
   "interface": {
-    "displayName": "Volcengine Design · Doubao Voice & Video"
+    "displayName": "Volcengine（豆包语音与视频）"
   },
   "plugins": [
     {
@@ -9,20 +9,20 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-aigc-plugins/volcengine-design-plugin.git",
-        "ref": "v0.1.2"
+        "ref": "v0.2.2"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_USE"
       },
       "category": "Creativity",
-      "version": "0.1.2",
-      "description": "豆包 ASR 词级时间轴、TTS 旁白、Seedream 生图与 Seedance 生视频；两套凭据分离，任务只提交一次。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/volcengine-design-plugin@v0.1.2/assets/official-logo.png",
+      "version": "0.2.2",
+      "description": "豆包 ASR 词级时间轴、TTS 旁白、Seedream 生图与 Seedance 生视频，两套凭据分离。",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/volcengine-design-plugin@v0.2.2/assets/official-logo.png",
       "interface": {
         "displayName": "Volcengine（豆包语音与视频）",
-        "shortDescription": "词级时间轴 ASR、TTS 旁白与图像视频生成",
-        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/volcengine-design-plugin@v0.1.2/assets/official-logo.png"
+        "shortDescription": "豆包 ASR 词级时间轴、TTS 旁白、Seedream 生图与 Seedance 生视频，两套凭据分离。",
+        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/volcengine-design-plugin@v0.2.2/assets/official-logo.png"
       },
       "displayName": "Volcengine（豆包语音与视频）"
     }
