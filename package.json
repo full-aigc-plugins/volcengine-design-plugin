@@ -1,13 +1,14 @@
 {
-  "name": "volcengine-design-plugin",
-  "version": "0.2.2",
+  "name": "volcengine-design",
+  "version": "0.2.3",
   "private": true,
   "type": "module",
   "main": "./dsh/lib/index.js",
   "dsh": {
     "bundle": {
-      "patch": "./cordis.patch.yml"
+      "patch": "./dsh/cordis.patch.yml"
     }
   },
-  "icon": "./dsh/icon.png"
+  "icon": "./dsh/icon.png",
+  "description": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring."
 }
