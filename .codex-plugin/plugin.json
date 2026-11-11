@@ -1,6 +1,6 @@
 {
   "name": "volcengine-design",
-  "version": "0.2.2+codex.20261109",
+  "version": "0.2.3+codex.20261111",
   "description": "豆包 ASR 词级时间轴、TTS 旁白、Seedream 生图与 Seedance 生视频，两套凭据分离。",
   "author": {
     "name": "Full Stack Skills / PartMe.AI",

@@ -5,7 +5,7 @@
     "en": "Volcengine（豆包语音与视频）",
     "zh-CN": "Volcengine（豆包语音与视频）"
   },
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "豆包 ASR 词级时间轴、TTS 旁白、Seedream 生图与 Seedance 生视频，两套凭据分离。",
   "description_i18n": {
     "en": "Doubao ASR with millisecond word timelines, TTS narration, Seedream images and Seedance video. Two credential families stay separate and tasks are submitted once.",
